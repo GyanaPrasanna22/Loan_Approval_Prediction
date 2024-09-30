@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loan Approval Prediction</title>
+    
+  </head>
+  <style>
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  label select, label input[type="number"] {
+    width: 100%;
+    height: 30px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  input[type="submit"] {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+  
+  /* Add some visual feedback for loan approval */
+  .loan-approved {
+    background-color: #C6F7D0;
+    padding: 10px;
+    border: 1px solid #3e8e41;
+    border-radius: 5px;
+    color: #3e8e41;
+  }
+  
+  .loan-rejected {
+    background-color: #F7CAC9;
+    padding: 10px;
+    border: 1px solid #e74c3c;
+    border-radius: 5px;
+    color: #e74c3c;
+  }
+  </style>
+
+  <body>
+    <h1>Loan Approval Prediction</h1>
+    <form action="" method="post">
+      <label for="Gender">Gender:</label>
+      <select id="Gender" name="Gender" required>
+        <option value="0">Male</option>
+        <option value="1">Female</option>
+      </select><br><br>
+
+      <label for="Married">Married:</label>
+      <select id="Married" name="Married" required>
+        <option value="0">No</option>
+        <option value="1">Yes</option>
+      </select><br><br>
+
+      <label for="Dependents">Dependents:</label>
+      <input type="number" id="Dependents" name="Dependents" required><br><br>
+
+      <label for="Education">Education:</label>
+      <select id="Education" name="Education" required>
+        <option value="0">Not Graduate</option>
+        <option value="1">Graduate</option>
+      </select><br><br>
+
+      <label for="Self_Employed">Self Employed:</label>
+      <select id="Self_Employed" name="Self_Employed" required>
+        <option value="0">No</option>
+        <option value="1">Yes</option>
+      </select><br><br>
+
+      <label for="ApplicantIncome">Applicant Income:</label>
+      <input type="number" id="ApplicantIncome" name="ApplicantIncome" required><br><br>
+
+      <label for="CoapplicantIncome">Coapplicant Income:</label>
+      <input type="number" id="CoapplicantIncome" name="CoapplicantIncome" required><br><br>
+
+      <label for="LoanAmount">Loan Amount:</label>
+      <input type="number" id="LoanAmount" name="LoanAmount" required><br><br>
+
+      <label for="Loan_Amount_Term">Loan Amount Term:</label>
+      <input type="number" id="Loan_Amount_Term" name="Loan_Amount_Term" required><br><br>
+
+      <label for="Credit_History">Credit History:</label>
+      <select id="Credit_History" name="Credit_History" required>
+        <option value="0">No</option>
+        <option value="1">Yes</option>
+      </select><br><br>
+
+      <label for="Property_Area">Property Area:</label>
+      <select id="Property_Area" name="Property_Area" required>
+        <option value="0">Rural</option>
+        <option value="1">Semi Urban</option>
+        <option value="2">Urban</option>
+      </select><br><br>
+
+      <input type="submit" value="Predict Loan Approval">
+    </form>
+  </body>
+</html>
