@@ -7,6 +7,10 @@ Image of the working of the web interface using flask,HTMLand CSS.
 
 ![image](https://github.com/user-attachments/assets/b88f3499-6368-4007-8eb4-f4995a898ec3)
 
+the output would be given as(Sample Output)
+![image](https://github.com/user-attachments/assets/40d426fc-540c-446d-a84d-b097d17c190a)
+
+
 
 
 
